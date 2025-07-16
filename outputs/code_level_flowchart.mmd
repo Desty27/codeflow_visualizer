@@ -1,0 +1,13 @@
+graph TB
+    A[Start] --> B[Import Libraries]
+    B --> C[Define Constants]
+    C --> D[Import Submodules]
+    D --> E[Parse Arguments]
+    E --> F[Check Email Format]
+    F --> G{Is Email Valid?}
+    G -->|Yes| H[Launch Modules]
+    G -->|No| I[Display Error]
+    H --> J[Retrieve Data]
+    J --> K[Display Results]
+    I --> K
+    K --> L[End]
